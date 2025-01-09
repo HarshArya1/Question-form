@@ -21,6 +21,7 @@ form.addEventListener("submit", (event) => {
             number-=1;
         }
     }
+    window.scrollBy(0, 500); 
     const out = document.getElementById('out');
     out.innerText = `${result} out of 5 is correct and you got ${number} Marks out of 20`;
 });
@@ -28,5 +29,6 @@ form.addEventListener('reset',(event)=>{
     form.reset();
     const out = document.getElementById('out');
     out.innerHTML=``;
+    window.scrollBy(0, 500); 
 
 })
